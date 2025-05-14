@@ -4,3 +4,4 @@
 - nvim
 - JetBrains Mono Nerd Font
 - nmtui
+- hyprpaper
