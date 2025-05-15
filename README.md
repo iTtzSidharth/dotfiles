@@ -5,3 +5,4 @@
 - JetBrains Mono Nerd Font
 - nmtui
 - hyprpaper
+- auto-cpufreq
