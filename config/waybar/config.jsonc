@@ -7,7 +7,7 @@
   "margin-bottom": -5,
   "margin-left": -8,
   "margin-right": 0,
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces","hyprland/workspaces","privacy"],
   "modules-center": ["clock"],
   "modules-right": [
     "pulseaudio",
@@ -19,6 +19,29 @@
     "memory",
     "tray"
   ],
+"hyprland/window": {
+            "format": "  {}",
+            "rotate": 0,
+            "separate-outputs": true,
+            "rewrite": {
+                "khing@archlinux:(.*)": "$1 ",
+                "(.*) — zen-browser": "$1 󰈹",
+                "(.*)zen-browser": "zen 󰈹",
+                "(.*) - nvim": "$1 ",
+                "(.*)nvim": "nvim ",
+                "(.*) — Thunar": "$1 󰉋",
+                "(.*)Spotify": "Spotify 󰓇",
+                "(.*)Steam": "Steam 󰓓",
+                "(.*) - Discord": "$1  ",
+                "(.*) — brave": "$1  ",
+                "(.*)brave": "brave  ",
+                "(.*) — Github": "$1  ",
+                "(.*)Github": "Github ",
+                "(.*)Spotify Free": "Spotify 󰓇",
+                "(.*)Spotify Premiun": "Spotify 󰓇",
+            },
+            "max-length": 50
+        },
   "hyprland/workspaces": {
     "format": "{name}: {icon}",
     "format-icons": {
@@ -26,6 +49,23 @@
       "default": ""
     }
   },
+"privacy": {
+            "icon-size": 12,
+            "icon-spacing": 5,
+            "transition-duration": 250,
+            "modules": [
+                {
+                    "type": "screenshare",
+                    "tooltip": true,
+                    "tooltip-icon-size": 24
+                },
+                {
+                    "type": "audio-in",
+                    "tooltip": true,
+                    "tooltip-icon-size": 24
+                }
+            ]
+        },
   "tray": {
     /*"icon-size": 10,
     "spacing": 1*/
