@@ -1,7 +1,7 @@
 {
   "layer": "top",
   "position": "top",
-  "output": [ "eDP-1" ],
+  "output": [ "eDP-1" ], /* COMMENT OUT THIS LINE IF WAY BAR IS NOT APPEARING IN SECONDARY DISPLAY */
   "height": 0,
   "margin-top": 0,
   "margin-bottom": -5,
