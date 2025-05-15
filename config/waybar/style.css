@@ -42,6 +42,7 @@
   border-radius: 5px;
 }
 
+#privacy,
 #tray,
 #backlight,
 #clock,
@@ -115,6 +116,12 @@
 #tray menu separator {
     border-radius: 5px;
 }*/
+
+#privacy {
+  border-radius: 5em;
+    margin-right: 0.2rem;
+    margin-left: 0.2rem;
+}
 
 #tray {
   border-radius: 5em;
