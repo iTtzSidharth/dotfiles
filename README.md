@@ -2,7 +2,8 @@
 ## what i need
 - alacritty
 - nvim
-- JetBrains Mono Nerd Font
+- JetBrains Mono Nerd Font ( ttf-jetbrains-mono-nerd )
+- Awesome font ( ttf-font-awesome )
 - nmtui
 - hyprpaper
 - auto-cpufreq
