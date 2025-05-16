@@ -7,5 +7,5 @@
 - Awesome font ( ttf-font-awesome )
 - nmtui
 - hyprlock
-- hyprpaper
+- swww
 - auto-cpufreq
