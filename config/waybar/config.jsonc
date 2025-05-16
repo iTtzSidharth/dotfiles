@@ -10,7 +10,7 @@
   "modules-left": ["hyprland/workspaces","hyprland/window","privacy"],
   "modules-center": ["clock"],
   "modules-right": [
-    "custom/lock",
+    /*"custom/lock",*/
     "pulseaudio",
     "backlight",
     "battery",
