@@ -1,15 +1,16 @@
 {
   "layer": "top",
   "position": "top",
-  "output": [ "eDP-1" ], /* COMMENT OUT THIS LINE IF WAY BAR IS NOT APPEARING IN SECONDARY DISPLAY */
+  /*"output": [ "eDp-1" ],*/
   "height": 0,
   "margin-top": 0,
   "margin-bottom": -5,
   "margin-left": -8,
   "margin-right": 0,
-  "modules-left": ["hyprland/workspaces","hyprland/workspaces","privacy"],
+  "modules-left": ["hyprland/workspaces","hyprland/window","privacy"],
   "modules-center": ["clock"],
   "modules-right": [
+    "custom/lock",
     "pulseaudio",
     "backlight",
     "battery",
@@ -19,7 +20,7 @@
     "memory",
     "tray"
   ],
-"hyprland/window": {
+ "hyprland/window": {
             "format": "  {}",
             "rotate": 0,
             "separate-outputs": true,
@@ -29,9 +30,9 @@
                 "(.*)zen-browser": "zen 󰈹",
                 "(.*) - nvim": "$1 ",
                 "(.*)nvim": "nvim ",
-                "(.*) - Visual Studio Code": "$1 󰨞",
+		"(.*) - Visual Studio Code": "$1 󰨞",
                 "(.*)Visual Studio Code": "Code 󰨞",
-                "(.*) - Code - OSS": "$1 󰨞",
+		"(.*) - Code - OSS": "$1 󰨞",
                 "(.*)Code - OSS": "Code 󰨞",
                 "(.*) — Thunar": "$1 󰉋",
                 "(.*)Spotify": "Spotify 󰓇",
@@ -70,6 +71,7 @@
                 }
             ]
         },
+
   "tray": {
     /*"icon-size": 10,
     "spacing": 1*/
@@ -183,6 +185,11 @@
             "max-length": 10,
             "tooltip": true,
             "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
+  },
+  "custom/lock": {
+      "tooltip": false,
+      "on-click": "sh -c '(sleep 0.5s; hyprlock)' & disown",
+      "format": ""
   },
   "pulseaudio": {
     "format": "{icon} {volume}%",
