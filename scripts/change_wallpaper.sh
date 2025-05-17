@@ -12,8 +12,8 @@ if [ -z "$wallpaper" ]; then
     exit 1
 fi
 
-# Apply the wallpaper using swww
-if swww img "$wallpaper"; then
+# Apply the wallpaper using swww with no animation
+if swww img "$wallpaper" --transition-type none; then
     echo "Applied wallpaper: $wallpaper"
 else
     echo "Error applying wallpaper"
