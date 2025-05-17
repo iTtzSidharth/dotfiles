@@ -1,13 +1,13 @@
 {
   "layer": "top",
   "position": "top",
-  /*"output": [ "eDp-1" ],*/
+  /*"output": [ "eDp-1","HDMI-A-1" ],*/
   "height": 0,
   "margin-top": 0,
   "margin-bottom": -5,
   "margin-left": -8,
   "margin-right": 0,
-  "modules-left": ["hyprland/workspaces","hyprland/window","privacy"],
+  "modules-left": ["hyprland/workspaces","privacy","hyprland/window"],
   "modules-center": ["clock"],
   "modules-right": [
     /*"custom/lock",*/
@@ -17,6 +17,7 @@
     "network",
     "cpu",
     "temperature",
+    "custom/wallpaper",
     "memory",
     "tray"
   ],
@@ -167,6 +168,13 @@
       "format": " {temperatureC}°C ",
       "tooltip": false
   },
+  "custom/wallpaper": {
+        "format": " ",
+        "on-click": "/home/sidharth/scripts/change_wallpaper.sh",
+	"exec": "cat ~/.cache/current_wallpaper.txt || echo 'No wallpaper'",
+        "tooltip": true,
+        "tooltip-format": "Click to change wallpaper"
+    },
   "memory": {
     /*"interval": 30,
     "format": "  {used:0.1f}G/{total:0.1f}G"*/
