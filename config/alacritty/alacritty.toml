@@ -1,21 +1,11 @@
 [window]
-opacity = 0.5
+opacity = 0.8
 
 [scrolling]
 multiplier = 15
 
-[font.bold]
-family = "JetBrains Mono Nerd Font"
-style = "Bold"
-
-[font.bold_italic]
-family = "JetBrains Mono Nerd Font"
-style = "Bold Italic"
-
-[font.italic]
-family = "JetBrains Mono Nerd Font"
-style = "Italic"
-
-[font.normal]
-family = "JetBrains Mono Nerd Font"
-style = "Regular"
+[general]
+import = [
+    "/home/sidharth/.cache/wal/colors-alacritty.toml",
+    "/home/sidharth/.config/alacritty/fonts.toml",
+]
