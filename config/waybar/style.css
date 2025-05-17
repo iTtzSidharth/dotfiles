@@ -1,45 +1,47 @@
+@import url("/home/sidharth/.cache/wal/colors-waybar.css");
+
 * {
-  font-family: "JetbrainsMono Nerd Font";
-  font-size: 10px;
-  min-height: 0px; /* first0, than10 was default */
-  padding-right: 3px; /* 2 was default */
-  padding-left: 3px;
-  padding-bottom: 0px;
+    font-family: "JetbrainsMono Nerd Font";
+    font-size: 10px;
+    min-height: 0px; /* first0, than10 was default */
+    padding-right: 3px; /* 2 was default */
+    padding-left: 3px;
+    padding-bottom: 0px;
     border: none;
     border-radius: 0px;
     font-weight: bold;
 }
 
 #waybar {
-  background: transparent; /* default was transparent */
-  color: #ababaa; /* #c6d0f5 */
+    background: transparent; /* default was transparent */
+    color: @foreground; /*#ababaa;*/
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
 }
 
 #workspaces {
-  border-radius: 5px;
-  margin: 5px;
-  background: #101010;
-  margin-right: 5px;
-  margin-left: 7px;
+    border-radius: 5px;
+    margin: 5px;
+    background: @background; /*#101010;*/
+    margin-right: 5px;
+    margin-left: 7px;
 }
 
 #workspaces button {
-  color: #ababaa;
-  border-radius: 5px;
-  padding: 0.2rem;
+    color: @foreground; /*#ababaa;*/
+    border-radius: 5px;
+    padding: 0.2rem;
 }
 
 #workspaces button.active {
-  color: #5f685e;
-  border-radius: 5px;
+    color: @color5; /*#5f685e;*/
+    border-radius: 5px;
 }
 
 #workspaces button:hover {
-  color: #5f685e;  /* #85c1dc */
-  border-radius: 5px;
+    color: @color3;  /* #5f685e */
+    border-radius: 5px;
 }
 
 #privacy,
@@ -50,18 +52,23 @@
 #pulseaudio,
 #network,
 #cpu,
+#custom-wallpaper,
 #memory,
 #temperature,
 #custom-power {
-    background-color: #101010;
+    background-color: @background; /*#101010;*/
     /*padding: 0.5rem 1rem;
     margin: 5px 0;*/
     margin: 5px 0px 5px 0px;
     padding: 0.5em;
 }
 
+#custom-wallpaper {
+    border-radius: 0px 0px 0px 0px;
+}
+
 #memory {
-  border-radius: 0px 5px 5px 0px;
+    border-radius: 0px 5px 5px 0px;
 }
 
 #temperature.critical {
@@ -69,39 +76,39 @@
 }
 
 #clock {
-  color: #7c8897;
-  border-radius: 5px;
-  margin-left: 0.6rem;
+    color: @foreground; /*#7c8897;*/
+    border-radius: 5px;
+    margin-left: 0.6rem;
 }
 
 #battery {
-  color: #819583;
+    color: @foreground; /*#819583;*/
 }
 
 #battery.charging {
-  color: #819583;
+    color: #819583;
 }
 
 #battery.warning:not(.charging) {
-  color: #e78284;
+    color: @color6; /*#e78284;*/
 }
 
 #backlight {
-  color: #ababaa;
+    color: @foreground;
 }
 
 #battery {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 #network {
-  border-radius: 0;
+    border-radius: 0;
 }
 
 #pulseaudio {
-  color: #819583;
-  border-radius: 5px 0px 0px 5px;
-  margin-left: 1rem;
+    color: @foreground;
+    border-radius: 5px 0px 0px 5px;
+    margin-left: 1rem;
 }
 
 /*#tray {
@@ -118,13 +125,13 @@
 }*/
 
 #privacy {
-  border-radius: 5em;
+    border-radius: 5em;
     margin-right: 0.2rem;
     margin-left: 0.2rem;
 }
 
 #tray {
-  border-radius: 5em;
+    border-radius: 5em;
     margin-right: 0.2rem;
     margin-left: 0.2rem;
 }
