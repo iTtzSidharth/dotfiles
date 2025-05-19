@@ -11,6 +11,7 @@
   "modules-center": ["clock"],
   "modules-right": [
     /*"custom/lock",*/
+    "idle_inhibitor",
     "pulseaudio",
     "backlight",
     "battery",
@@ -48,6 +49,17 @@
             },
             "max-length": 50
         },
+
+	"idle_inhibitor": {
+	    "format": "{icon}",
+            "rotate": 0,
+            "format-icons": {
+                "activated": "󰅶 ",
+                "deactivated": "󰛊 "
+            },
+            "tooltip-format-activated":"Caffeine Mode Active",
+            "tooltip-format-deactivated":"Caffeine Mode Inactive"
+	},
 
 	"hyprland/workspaces": {
 	    "format": "{name}: {icon}",
