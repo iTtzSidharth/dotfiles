@@ -44,6 +44,7 @@
     border-radius: 5px;
 }
 
+#idle_inhibitor,
 #privacy,
 #tray,
 #backlight,
@@ -103,10 +104,15 @@
     border-radius: 0;
 }
 
-#pulseaudio {
+#idle_inhibitor{
     color: @foreground;
     border-radius: 5px 0px 0px 5px;
     margin-left: 1rem;
+}
+
+#pulseaudio {
+    color: @foreground;
+    border-radius: 0px 0px 0px 0px;
 }
 
 #privacy {
