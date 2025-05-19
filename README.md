@@ -1,5 +1,5 @@
 # This is for only personal use (i.e for backup)
-## what i need
+## what need to be installed...
 - alacritty
 - nvim
 - JetBrains Mono Nerd Font ( ttf-jetbrains-mono-nerd )
