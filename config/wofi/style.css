@@ -21,7 +21,7 @@ window {
 }
 
 #outer-box {
-  margin: 5px;
+  margin: 0px;
   border: none;
   background-color: @background; /*transparent;*/
 }
@@ -47,6 +47,6 @@ window {
 
 #entry:selected {
   background-color: @background; /*rgba(55, 59, 65, 0.95);*/
-  border-radius: 5px;
+  border-radius: 0px;
   border: none;
 }
