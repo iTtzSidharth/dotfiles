@@ -3,8 +3,8 @@
 * {
     font-family: "JetbrainsMono Nerd Font";
     font-size: 10px;
-    min-height: 0px; /* first0, than10 was default */
-    padding-right: 3px; /* 2 was default */
+    min-height: 0px;
+    padding-right: 3px;
     padding-left: 3px;
     padding-bottom: 0px;
     border: none;
@@ -13,8 +13,8 @@
 }
 
 #waybar {
-    background: transparent; /* default was transparent */
-    color: @foreground; /*#ababaa;*/
+    background: transparent;
+    color: @foreground;
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0px;
@@ -23,24 +23,24 @@
 #workspaces {
     border-radius: 5px;
     margin: 5px;
-    background: @background; /*#101010;*/
+    background: @background;
     margin-right: 5px;
     margin-left: 7px;
 }
 
 #workspaces button {
-    color: @foreground; /*#ababaa;*/
+    color: @foreground;
     border-radius: 5px;
     padding: 0.2rem;
 }
 
 #workspaces button.active {
-    color: @color5; /*#5f685e;*/
+    color: @color5;
     border-radius: 5px;
 }
 
 #workspaces button:hover {
-    color: @color3;  /* #5f685e */
+    color: @color3;
     border-radius: 5px;
 }
 
@@ -56,9 +56,7 @@
 #memory,
 #temperature,
 #custom-power {
-    background-color: @background; /*#101010;*/
-    /*padding: 0.5rem 1rem;
-    margin: 5px 0;*/
+    background-color: @background;
     margin: 5px 0px 5px 0px;
     padding: 0.5em;
 }
@@ -76,13 +74,13 @@
 }
 
 #clock {
-    color: @foreground; /*#7c8897;*/
+    color: @foreground;
     border-radius: 5px;
     margin-left: 0.6rem;
 }
 
 #battery {
-    color: @foreground; /*#819583;*/
+    color: @foreground;
 }
 
 #battery.charging {
@@ -90,7 +88,7 @@
 }
 
 #battery.warning:not(.charging) {
-    color: @color6; /*#e78284;*/
+    color: @color6;
 }
 
 #backlight {
@@ -110,19 +108,6 @@
     border-radius: 5px 0px 0px 5px;
     margin-left: 1rem;
 }
-
-/*#tray {
-  margin-right: 1rem;
-  margin-left: 1rem;
-  border-radius: 5px;
-}*/
-/*#tray menu * {
-    border-radius: 5px;
-}
-
-#tray menu separator {
-    border-radius: 5px;
-}*/
 
 #privacy {
     border-radius: 5em;
