@@ -48,14 +48,16 @@
             },
             "max-length": 50
         },
-  "hyprland/workspaces": {
-    "format": "{name}: {icon}",
-    "format-icons": {
-      "active": "",
-      "default": ""
-    }
-  },
-"privacy": {
+
+	"hyprland/workspaces": {
+	    "format": "{name}: {icon}",
+	    "format-icons": {
+		"active": "",
+		"default": ""
+	    }
+	},
+
+	"privacy": {
             "icon-size": 12,
             "icon-spacing": 5,
             "transition-duration": 250,
@@ -73,26 +75,16 @@
             ]
         },
 
-  "tray": {
-    /*"icon-size": 10,
-    "spacing": 1*/
-    "icon-size": 12,
-    "rotate": 0,
-    "spacing": 15
-  },
-  "custom/music": {
-    "format": "  {}",
-    "escape": true,
-    "interval": 5,
-    "tooltip": false,
-    "exec": "playerctl metadata --format='{{ artist }} - {{ title }}'",
-    "on-click": "playerctl play-pause",
-    "max-length": 50
-  },
-  "clock": {
-    "timezone": "Asia/Kolkata",
-    "format": "{:%I:%M %p}",
-            "rotate": 0,
+	"tray": {
+	    "icon-size": 12,
+	    "rotate": 0,
+	    "spacing": 15
+	},
+
+	"clock": {
+	    "timezone": "Asia/Kolkata",
+	    "format": "{:%I:%M %p}",
+	    "rotate": 0,
             "format-alt": "{:%R 󰃭 %d·%m·%y}",
             "tooltip-format": "<span>{calendar}</span>",
             "calendar": {
@@ -112,78 +104,73 @@
                 "on-click-backward": "tz_down",
                 "on-scroll-up": "shift_up",
                 "on-scroll-down": "shift_down"
-            }
-        },
-	"backlight": {
-        "rotate": 0,
-        "format": "{icon} {percent}%",
-        "format-icons": ["", "", "", "", "", "", "", "", ""],
-        "tooltip-format": "{icon} {percent}% ",
-        "min-length": 5
-        },
+	    }
+	},
 
-      "battery": {
-      "states": {
-	  "good": 95,
-	  "warning": 30,
-	  "critical": 20
-      },
-      "format": "{icon} {capacity}%",
-      "rotate": 0,
-      "format-charging": " {capacity}%",
-      "format-plugged": " {capacity}%",
-      "format-alt": "{time} {icon}",
-      "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
-  },
-  "network": {
-    /*"format": "{icon} {bandwidthDownBits}%",
-    "format-wifi": "󰤢 {bandwidthDownBits}",
-    "format-ethernet": "󰈀 {bandwidthDownBits}",
-    "format-disconnected": "󰤠 No Network",
-    "interval": 5,
-    "tooltip": false*/
-    "tooltip": true,
-    "format-wifi": " ",
-    "rotate": 0,
-    "format-ethernet": "󰈀 ",
-    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
-    "format-linked": "󰈀 {ifname} (No IP)",
-    "format-disconnected": "󰖪 ",
-    "tooltip-format-disconnected": "Disconnected",
-    "format-alt": "<span foreground='#ffead3'> {bandwidthDownBytes}</span> <span foreground='#819583'> {bandwidthUpBytes}</span>",
-    "interval": 2,
-  },
-  "cpu": {
-    /*"interval": 1,
-    "format": "  {icon0}{icon1}{icon2}{icon3} {usage:>2}%",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]*/
-    "interval": 10,
-    "format": "󰍛 {usage}%",
-    "rotate": 0,
-    "format-alt": "{icon0}{icon1}{icon2}{icon3}",
-    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
-  },
-  "temperature": {
-      "critical-thresholde": 65,
-      "format": " {temperatureC}°C ",
-      "tooltip": false
-  },
-  "custom/wallpaper": {
-        "format": " ",
-        "on-click": "/home/sidharth/scripts/change_wallpaper.sh",
-	"exec": "cat ~/.cache/current_wallpaper.txt || echo 'No wallpaper'",
-        "tooltip": true,
-        "tooltip-format": "Click to change wallpaper"
-    },
-  "memory": {
-    /*"interval": 30,
-    "format": "  {used:0.1f}G/{total:0.1f}G"*/
-    "states": {
-                "c": 90, // critical
+	"backlight": {
+	    "rotate": 0,
+	    "format": "{icon} {percent}%",
+	    "format-icons": ["", "", "", "", "", "", "", "", ""],
+	    "tooltip-format": "{icon} {percent}% ",
+	    "min-length": 5
+	},
+
+	"battery": {
+	    "states": {
+		"good": 85,
+		"warning": 30,
+		"critical": 20
+	    },
+	    "format": "{icon} {capacity}%",
+	    "rotate": 0,
+	    "format-charging": " {capacity}%",
+	    "format-plugged": " {capacity}%",
+	    "format-alt": "{time} {icon}",
+	    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+	},
+
+	"network": {
+	    "tooltip": true,
+	    "format-wifi": " ",
+	    "rotate": 0,
+	    "format-ethernet": "󰈀 ",
+	    "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
+	    "format-linked": "󰈀 {ifname} (No IP)",
+	    "format-disconnected": "󰖪 ",
+	    "tooltip-format-disconnected": "Disconnected",
+	    "format-alt": "<span foreground='#ffead3'> {bandwidthDownBytes}</span> <span foreground='#819583'> {bandwidthUpBytes}</span>",
+	    "interval": 2,
+	},
+
+	"cpu": {
+	    "interval": 10,
+	    "format": "󰍛 {usage}%",
+	    "rotate": 0,
+	    "format-alt": "{icon0}{icon1}{icon2}{icon3}",
+	    "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+	},
+
+	"temperature": {
+	    "critical-thresholde": 75,
+	    "format": " {temperatureC}°C ",
+	    "tooltip": false
+	},
+
+	"custom/wallpaper": {
+	    "format": " ",
+	    "on-click": "/home/sidharth/scripts/change_wallpaper.sh",
+	    "exec": "cat ~/.cache/current_wallpaper.txt || echo 'No wallpaper'",
+	    "tooltip": true,
+	    "tooltip-format": "Click to change wallpaper"
+	},
+
+	"memory": {
+	    "states": {
+		"c": 90, // critical
                 "h": 60, // high
                 "m": 30, // medium
-            },
-            "interval": 30,
+	    },
+	    "interval": 30,
             "format": "󰾆 {used}GB",
             "rotate": 0,
             "format-m": "󰾅 {used}GB",
@@ -193,18 +180,20 @@
             "max-length": 10,
             "tooltip": true,
             "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
-  },
-  "custom/lock": {
-      "tooltip": false,
-      "on-click": "sh -c '(sleep 0.5s; hyprlock)' & disown",
-      "format": ""
-  },
-  "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-muted": "",
-    "format-icons": {
-      "default": ["", "", " "]
-    },
-    "on-click": "pavucontrol"
-  }
+	},
+
+	/*"custom/lock": {
+	    "tooltip": false,
+	    "on-click": "sh -c '(sleep 0.5s; hyprlock)' & disown",
+	    "format": ""
+	},*/
+
+	"pulseaudio": {
+	    "format": "{icon} {volume}%",
+	    "format-muted": "",
+	    "format-icons": {
+		"default": ["", "", " "]
+	    },
+	    "on-click": "pavucontrol"
+	}
 }
