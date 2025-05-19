@@ -115,7 +115,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 alias cat="bat"
-alias vim='nvim'
+alias v='nvim'
 alias byby='sudo shutdown now'
 alias btop='btop --force-utf'
 alias ls='ls -a --color'
