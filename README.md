@@ -10,3 +10,5 @@
 - hyprlock
 - swww
 - auto-cpufreq
+- nsxiv
+- hypridle
